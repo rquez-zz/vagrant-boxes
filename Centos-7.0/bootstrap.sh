@@ -35,6 +35,7 @@ git config --global alias.graphlog "log --graph --decorate --abbrev-commit --dat
 # Install Vundle
 mkdir /home/vagrant/.vim/bundle
 git clone https://github.com/gmarik/Vundle.vim.git /home/vagrant/.vim/bundle/Vundle.vim
+chown -R vagrant:vagrant /home/vagrant/.vim/bundle/Vundle.vim
 
 # Install Global NPM Packages
 npm install -g jshint gulp grunt bower browserify slush yo
