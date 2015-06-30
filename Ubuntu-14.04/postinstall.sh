@@ -22,7 +22,7 @@ sudo apt-get install oracle-java8-set-default -y
 ###################### Install Maven
 sudo apt-get install maven -y
 
-###################### Instav Ruby
+###################### Install Ruby
 sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev python-software-properties -y
 sudo apt-get install libgdbm-dev libncurses5-dev automake libtool bison libffi-dev -y
 gpg --keyserver hkp://keys.gnupg.net --recv-keys D39DC0E3
