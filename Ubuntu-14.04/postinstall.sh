@@ -50,7 +50,9 @@ sudo npm install -g slush
 ###################### Install git
 sudo apt-get install git -y
 git config --global color.ui auto
-git config --global alias.graphlog "log --graph --decorate --abbrev-commit --date=relative --colors"
+git config --global alias.graphlog "log --graph --decorate --abbrev-commit --date=relative "
+git config --global user.email "rvzxjr@gmail.com"
+git config --global user.name "Ricardo Vasquez"
 
 ###################### Install vim
 sudo apt-get install vim -y
@@ -73,3 +75,4 @@ vim +PluginInstall +qall
 sudo apt-get install unity-tweak-tool numix-gtk-theme numix-icon-theme numix-icon-theme-circle -y
 sudo apt-get install tmux -y
 rm /vagrant/*.log
+mkdir ~/Workspace
