@@ -68,9 +68,8 @@ chown -R vagrant:vagrant /home/vagrant/.vim/bundle/Vundle.vim
 ###################### Install Dot Files
 cd ~/
 rm ~/.bash_profile
-rm ~/.gitconfig
 git init
-git remote add origin git@github.com:rquez/dot-files.git
+git remote add origin git@github.com:rquez/Dot-Files.git
 git fetch
 git checkout -t origin/master
 echo "source ~/.bash_profile" >> ~/.bashrc
