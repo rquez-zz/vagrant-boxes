@@ -37,6 +37,9 @@ gem install compass
 ###################### Install MongoDB
 sudo apt-get install mongodb-org -y
 
+###################### Install PostgreSQL
+sudo apt-get install postgresql postgresql-contrib postgresql-client pgadmin3
+
 ###################### Install Chrome
 sudo apt-get install google-chrome-stable -y
 
