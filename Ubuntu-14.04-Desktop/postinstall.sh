@@ -8,10 +8,10 @@ ssh-add
 ssh-keyscan github.com >> ~/.ssh/known_hosts
 
 ###################### Update
-wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
-sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee /etc/apt/sources.list.d/google.list'
 sudo sh -c 'echo "deb http://repo.mongodb.org/apt/ubuntu "$(lsb_release -sc)"/mongodb-org/3.0 multiverse" | sudo tee /etc/apt/sources.list.d/google.list'
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
 sudo add-apt-repository ppa:webupd8team/java -y
 sudo apt-add-repository ppa:numix/ppa -y
 sudo apt-get purge unity-webapps-common -y
@@ -34,7 +34,7 @@ rvm install 2.1.2
 rvm use 2.1.2 --default
 gem install compass
 
-###################### Install Chrome
+###################### Install MongoDB
 sudo apt-get install mongodb-org -y
 
 ###################### Install Chrome
