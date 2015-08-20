@@ -38,7 +38,13 @@ gem install compass
 sudo apt-get install mongodb-org -y
 
 ###################### Install PostgreSQL
-sudo apt-get install postgresql postgresql-contrib postgresql-client pgadmin3
+sudo apt-get install postgresql postgresql-contrib postgresql-client pgadmin3 -y
+
+###################### Install Eclipse & Intellij
+wget http://download.jetbrains.com/idea/ideaIC-14.1.4.tar.gz
+sudo tar -zxvf ideaIC-*.tar.gz
+sudo mv idea-IC*/ /opt/idea
+sudo /opt/idea/bin/idea.sh
 
 ###################### Install Chrome
 sudo apt-get install google-chrome-stable -y
