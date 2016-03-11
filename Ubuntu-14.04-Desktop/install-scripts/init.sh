@@ -40,4 +40,4 @@ echo "source ~/.bash_profile" >> ~/.bashrc
 
 # Personalize
 echo "Installing apps..."
-sudo apt-get -q -y install unity-tweak-tool numix-gtk-theme numix-icon-theme numix-icon-theme-circle tmux google-chrome-stable fluxgui build-essential
+sudo apt-get -q -y install unity-tweak-tool numix-gtk-theme numix-icon-theme numix-icon-theme-circle google-chrome-stable fluxgui build-essential
