@@ -1,12 +1,5 @@
 #!/bin/bash
 
-# Get Google Signing Key
-wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-
-# Add Chrome Repo
-echo "Adding PPAs..."
-sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
-
 # Update Sources
 sudo apt-get -q update
 
@@ -28,6 +21,3 @@ git remote add origin git@github.com:rquez/dot-files.git
 git fetch
 git checkout -t origin/master
 echo "source ~/.bash_profile" >> ~/.bashrc
-
-# Personalize
-sudo apt-get -q -y install google-chrome-stable build-essential
