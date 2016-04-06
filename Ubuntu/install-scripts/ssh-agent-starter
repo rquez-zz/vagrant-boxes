@@ -1,6 +1,0 @@
-cp dev_key ~/.ssh/
-chmod 600 ~/.ssh/dev_key
-ssh-keyscan -H github.com > ~/.ssh/known_hosts
-eval $(ssh-agent -s)
-ssh-add ~/.ssh/dev_key
-ssh -T git@github.com
