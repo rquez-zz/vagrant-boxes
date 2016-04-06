@@ -1,0 +1,4 @@
+- name: Install Haskell
+  apt: name=haskell-platform update_cache=yes
+- name: Clone CS Coursework Repo
+  git: repo=git@github.com:rquez/cs-coursework.git dest={{ home }}/Workspace/cs-coursework accept_hostkey=yes force=yes key_file={{ home }}/.ssh/private_key

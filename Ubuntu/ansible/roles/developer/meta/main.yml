@@ -1,0 +1,7 @@
+dependencies:
+  - { role: playlist.java }
+  - { role: tecris.maven }
+  - { role: geerlingguy.nodejs }
+  - { role: marvinpinto.docker }
+  - { role: bbatsche.MongoDB-Install }
+  - { role: geerlingguy.ruby }
