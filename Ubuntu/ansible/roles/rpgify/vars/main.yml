@@ -1,0 +1,7 @@
+home: /home/vagrant
+user: vagrant
+nodejs_version: "4.x"
+nodejs_npm_global_packages:
+  - name: jshint
+  - name: nodemon
+  - name: mocha

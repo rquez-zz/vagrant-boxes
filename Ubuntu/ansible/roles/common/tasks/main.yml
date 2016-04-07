@@ -28,4 +28,4 @@
 - name: Install Tmux
   apt: name=tmux state=latest
 - name: Create Workspace Directory
-  file: path={{ home }}/Workspace state=directory mode=0755
+  file: path={{ home }}/Workspace state=directory mode=0777

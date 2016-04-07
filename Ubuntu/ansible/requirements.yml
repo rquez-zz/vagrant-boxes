@@ -2,5 +2,5 @@
 - src: tecris.maven
 - src: geerlingguy.nodejs
 - src: marvinpinto.docker
-- src: bbatsche.MongoDB-Install
+- src: Stouts.mongodb
 - src: geerlingguy.ruby
