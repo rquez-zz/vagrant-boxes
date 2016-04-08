@@ -1,7 +1,6 @@
-java_packages:
-  - oracle-java8-installer
+oracle_java_set_as_default: yes
 maven_version: 3.1.1
-nodejs_version: "4.4.2"
+nodejs_version: "4.x"
 nodejs_npm_global_packages:
   - name: jshint
   - name: nodemon

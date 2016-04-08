@@ -1,4 +1,5 @@
-- src: playlist.java
+- src: ansiblebit.launchpad-ppa-webupd8
+- src: ansiblebit.oracle-java
 - src: tecris.maven
 - src: geerlingguy.nodejs
 - src: marvinpinto.docker
