@@ -4,4 +4,6 @@
   copy: src=private_key dest={{ home }}/Workspace/rpgify/privateKey mode=0777
 - name: Install NPM Modules
   npm: path={{ home }}/Workspace/rpgify
+- name: Get ownership of rpgify directory
+  files: path={{ home }}/Workspace/rpgify owner={{ user }} recurse=yes
   
