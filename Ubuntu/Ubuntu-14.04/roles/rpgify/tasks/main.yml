@@ -1,0 +1,11 @@
+- name: Clone RPGify Repo
+  git: repo=git@bitbucket.org:rquez/rpgify.git dest={{ home }}/Workspace/rpgify accept_hostkey=yes force=yes key_file={{ home }}/.ssh/privateKey
+- name: Get ownership of rpgify directory
+  file: path={{ home }}/Workspace/rpgify owner={{ user }} recurse=yes
+- name: Copy Private Key
+  copy: src=privateKey dest={{ home }}/Workspace/rpgify/privateKey mode=0777
+- name: Copy Google API Key
+  copy: src=googleApiKey.json dest={{ home }}/Workspace/rpgify mode=0777
+- name: Install NPM Modules
+  npm: path={{ home }}/Workspace/rpgify
+  

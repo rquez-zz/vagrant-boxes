@@ -1,11 +1,11 @@
 - name: Copy Personal SSH Key
-  copy: src=private_key dest={{ home }}/.ssh/private_key
+  copy: src=privateKey dest={{ home }}/.ssh/privateKey
 - name: Set SSH Key Permissions
-  file: path={{ home }}/.ssh/private_key owner={{ user }} group={{ user }} mode=0600
+  file: path={{ home }}/.ssh/privateKey owner={{ user }} group={{ user }} mode=0600
 - name: Install git
   apt: name=git state=latest update_cache=yes
 - name: Clone Dotfiles, Vundle, and TPM
-  git: repo=git@github.com:{{ item.org }}/{{ item.repo }}.git dest={{ item.dest }} accept_hostkey=yes force=yes key_file={{ home }}/.ssh/private_key
+  git: repo=git@github.com:{{ item.org }}/{{ item.repo }}.git dest={{ item.dest }} accept_hostkey=yes force=yes key_file={{ home }}/.ssh/privateKey
   with_items:
     - { dest: '{{ home }}/dot-files', org: 'rquez', repo: 'dot-files' }
     - { dest: '{{ home }}/.vim/bundle/Vundle.vim', org: 'VundleVim', repo: 'Vundle.vim' }

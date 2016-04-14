@@ -1,3 +1,4 @@
 .vagrant
 *.log
-private_key
+privateKey
+googleApiKey.json
