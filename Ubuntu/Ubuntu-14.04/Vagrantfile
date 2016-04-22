@@ -1,3 +1,6 @@
+i# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
 $script = <<SCRIPT
 if [ ! -f /usr/bin/ansible-playbook ]
 	then
@@ -9,6 +12,7 @@ fi
 ansible-galaxy install -r /vagrant/requirements.yml
 ansible-playbook --inventory="localhost" -c local -s /vagrant/playbook.yml
 SCRIPT
+
 Vagrant.configure(2) do |config|
 
   config.vm.box = "ubuntu/trusty64"
@@ -19,7 +23,6 @@ Vagrant.configure(2) do |config|
 
   config.vm.provider "virtualbox" do |vb|
 	vb.memory = 2048
-	vb.cpus = 2
     vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
   end
 
