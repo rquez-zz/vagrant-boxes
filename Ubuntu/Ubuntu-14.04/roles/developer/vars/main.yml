@@ -1,8 +1,0 @@
-oracle_java_set_as_default: yes
-maven_version: 3.1.1
-nodejs_version: "4.x"
-nodejs_install_npm_user: root
-nodejs_npm_global_packages:
-  - name: jshint
-  - name: nodemon
-  - name: mocha

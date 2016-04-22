@@ -1,4 +1,2 @@
-.vagrant
-*.log
-privateKey
-googleApiKey.json
+*
+!Vagrantfile
