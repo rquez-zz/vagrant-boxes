@@ -10,7 +10,7 @@ if [ ! -f /usr/bin/ansible-playbook ]
 	apt-get install -y ansible
 fi
 ansible-galaxy install -r /vagrant/requirements.yml
-ansible-playbook --inventory="localhost" -c local -s /vagrant/playbook.yml
+ansible-playbook --inventory="localhost" -c local -s /vagrant/playbook.yml -e ansible_ssh_user=root
 SCRIPT
 
 Vagrant.configure(2) do |config|
